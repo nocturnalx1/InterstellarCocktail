@@ -1,0 +1,47 @@
+﻿<div class="login">
+    <h4>Buscar Cocktel </h4>
+    <p>Ingresa el ingrediente o nombre del cocktel</p>
+    <input type="text" id="SearchData" name="SearchData" placeholder="¡Ingresar tu cocktel favorito!" required="required" />
+    <button id="sendExecute" type="submit" class="btn btn-primary btn-block btn-large">¡Vamos por ello!</button>
+</div>
+
+<div class="space-container"></div>
+
+<div class="modal fade" id="modalCocktelDetail" tabindex="-1" aria-labelledby="modalCocktelDetail" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalCocktelDetailTitle">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="picDetail-content">
+                    <div class="picDetail">
+                        <div id="cocktelFavorite" class="CocktelFavorite btn-fav">
+                           <i class="bi bi-heart-fill"></i>
+                        </div>
+                        <img id="picCocketl" class="pic-image" alt="Imagen" src="https://www.thecocktaildb.com/images/media/drink/xrl66i1493068702.jpg">
+                    </div>
+
+                    <div class="CocktelTitleIngredients">
+                        <h3>Ingredientes</h3>
+                        <div class="CoktelDetail" id="CoktelDetail">
+                            @*     <div class="CocktelIngrediente">
+                                <img src="https://www.thecocktaildb.com/images/ingredients/tequila-Small.png" /> Primer ingrediente
+                                </div>*@
+                        </div>
+                    </div>
+                    <div class="CocktelDescription">
+                        <h3>Instrucciones</h3>
+
+                        <p id="cocktelInstructions"></p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

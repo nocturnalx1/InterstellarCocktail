@@ -1,0 +1,197 @@
+﻿@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+.space-Caption {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 0px;
+}
+
+.space-description {
+    font-size: 13px;
+    width: 100%;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    display: -webkit-box;
+}
+
+img {
+    max-width: 100%;
+    backdrop-filter: blur(5px);
+}
+
+.desc-caption-hidde {
+    display: flex;
+    position: absolute;
+    align-content: flex-end;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    bottom: 0px;
+    left: 8px;
+    width: calc(100% - 20px);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 0.05;
+    filter: blur(10px);
+    transition: all 1s ease;
+    text-align: center;
+}
+
+.desc-caption {
+    display: flex;
+    position: absolute;
+    align-content: flex-end;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    bottom: 0px;
+    left: 8px;
+    width: calc(100% - 20px);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 1;
+    transition: all 3s ease;
+    text-align: center;
+}
+
+.CocktelTitleIngredients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 8px;
+}
+
+.CocktelFavorite {
+    position: absolute;
+
+    right: 0px;
+    padding: 6px;
+    margin: 10px;
+}
+
+
+.picDetail-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.CoktelDetail {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.CocktelDescription {
+    width: 44%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8px;
+}
+
+.CocktelIngrediente {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    padding: 8px;
+}
+
+    .CocktelIngrediente img {
+        border: 1px solid rgb(0 0 0 / 31%);
+        box-shadow: 0px 0px 6px 0px rgb(0 0 0 / 45%);
+        border-radius: 16px;
+    }
+
+.picDetail {
+    max-height: 200px;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    border-radius: 15px;
+    border: 1px solid rgb(0 0 0 / 50%);
+    box-shadow: 0px 0px 6px 0px rgb(0 0 0 / 45%);
+    /*width: 266px;*/
+}
+
+.pic {
+    display:flex;
+    max-height: 200px;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    float: left;
+    border-radius: 15px;
+    border: 1px solid rgb(0 0 0 / 50%);
+    box-shadow: 0px 0px 6px 0px rgb(0 0 0 / 45%);
+}
+
+.pic-caption {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(0 0 0 / 38%);
+    opacity: 0;
+    padding: 10px;
+    text-align: center;
+    border-radius: 4px;
+    backdrop-filter: blur(2px);
+    color: #fff;
+    text-shadow: 0 0 11px rgb(0 0 0);
+    /* box-shadow: inset 0px 0px 13px 0px rgb(0 0 0);*/
+}
+
+.pic-image {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    max-width: 200px;
+    opacity: 1;
+}
+
+.pic:hover .pic-image {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity: 0.7;
+    filter: grayscale();
+    filter: blur(5px);
+}
+/*All classes with same attribute*/
+a, a:hover,
+.pic .pic-image,
+.pic-caption,
+.pic:hover .pic-caption,
+.pic:hover img {
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+}
+
+/*Effects in Caption*/
+.pic:hover .bottom-to-top {
+    opacity: 1;
+}
+/*Bottom to Top*/
+.bottom-to-top {
+    top: 100%;
+    left: 0%;
+}
+
+.pic:hover .bottom-to-top {
+    top: 0%
+}
